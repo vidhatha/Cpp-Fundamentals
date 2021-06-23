@@ -1,14 +1,14 @@
-# the compiler we use
+# the compiler: cpp
 CC = g++
 
 # compiler flags
 # -g adds debugging info to the executable
-# -Wall turns on most but not all compiler warnings
-CFlags = -g -Wall
+#  -Wall turns on most but not all compiler warnings
+CFLAGS = -g -Wall -pthread
 
 # the build target executable
-TARGET = operator_overloading
-	
+TARGET = simple_thread_ex
+
 all: $(TARGET)
 
 $(TARGET): $(TARGET).cpp
@@ -16,4 +16,4 @@ $(TARGET): $(TARGET).cpp
 
 clean:
 	$(RM) $(TARGET)
-
+#
