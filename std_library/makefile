@@ -7,7 +7,7 @@ CC = g++
 CFLAGS = -g -Wall
 
 # build target executable
-TARGET = pair
+TARGET = tuple
 
 all: $(TARGET)
 
