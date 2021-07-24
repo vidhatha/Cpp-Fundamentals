@@ -5,4 +5,4 @@
 tree=$(tree -tf --noreport -I 'makefile' --charset ascii $1 |
 	       sed -e 's/| \+/  /g' -e 's/[|`]-\+/ */g' -e 's:\(* \)\(\(.*/\)\([^/]\+\)\):\1[\4](\2):g')
 
-printf "# Project tree\n\n${tree}"
+printf "# Cpp Fundamentals\n\n${tree}"
