@@ -1,4 +1,4 @@
-```bash
+```shellscript
 Root
 ├── README.md
 ├── concurrency
@@ -42,5 +42,5 @@ Root
         ├── pair.cpp
         ├── tie_ignore.cpp
         └── tuple.cpp
-```
+```shellscript
 11 directories, 31 files
