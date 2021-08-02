@@ -46,6 +46,14 @@ int main() {
 	vector<char> cvect1;
 	cvect1.assign(5, 'a'); // {a, a, a, a, a}
 
+	//shrink_to_fit
+	vector<string> svect{"cat", "dog", "fish"};
+	svect.reserve(10);
+	cout << "size of vector before shrink_to_fit: " << svect.size() << endl;
+	cout << "capacity of vector before shrink_to_fit: " << svect.capacity() << endl;
+	svect.shrink_to_fit();
+	cout << "size of vector after shrink_to_fit: " << svect.size() << endl;
+	cout << "capacity of vector after shrink_to_fit: " << svect.capacity() << endl;
 	return 0;
 }
 
