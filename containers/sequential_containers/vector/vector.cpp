@@ -41,6 +41,10 @@ int main() {
 	       cout << *rit << " ";
 	}	       
 	cout << endl;
+	
+	//assign
+	vector<char> cvect1;
+	cvect1.assign(5, 'a'); // {a, a, a, a, a}
 
 	return 0;
 }
